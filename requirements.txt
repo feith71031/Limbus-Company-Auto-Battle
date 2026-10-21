@@ -1,0 +1,4 @@
+opencv-python-headless>=4.8
+numpy>=1.26
+# 只有打包 exe 時需要
+pyinstaller>=6.0
