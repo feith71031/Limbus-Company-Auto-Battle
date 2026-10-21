@@ -2,7 +2,7 @@
   <img src="icon.png" width="128" alt="icon">
 </p>
 
-<h1 align="center">Limbus 自動戰鬥 ＆ 視窗自動按鍵器</h1>
+<h1 align="center">Limbus Company 自動戰鬥</h1>
 
 <p align="center">
   Windows 小工具：看遊戲畫面自動幫你打 <b>Limbus Company</b> 的戰鬥，另附一個通用的「對指定視窗連續按鍵」工具。
@@ -18,7 +18,7 @@
 
 - [功能](#功能)
 - [下載與執行](#下載與執行)
-- [Limbus 自動戰鬥 使用說明](#limbus-自動戰鬥-使用說明)
+- [Limbus Company 自動戰鬥 使用說明](#limbus-company-自動戰鬥-使用說明)
 - [視窗自動按鍵器 使用說明](#視窗自動按鍵器-使用說明)
 - [常見問題](#常見問題)
 - [從原始碼執行 / 自行打包](#從原始碼執行--自行打包)
@@ -27,7 +27,7 @@
 
 ## 功能
 
-### Limbus 自動戰鬥（`Limbus自動戰鬥.exe`）
+### Limbus Company 自動戰鬥（`Limbus Company 自動戰鬥.exe`）
 
 | 遊戲畫面 | 程式動作 |
 |---|---|
@@ -44,23 +44,23 @@
 - **提示音可自訂**：兩種提示音都能試聽、更換、開關。
 - **快捷鍵**：`F8` 開始 / 停止，`Ctrl+Y` 暫停 / 繼續。
 
-### 視窗自動按鍵器（`視窗自動按鍵器.exe`）
+### 附贈：視窗自動按鍵器（`視窗自動按鍵器.exe`）
 
 對任何指定的視窗，以固定間隔重複送出一串按鍵（例如 `p{ENTER}`），可以錄製按鍵、設定次數、背景或前景送鍵。
 
 ## 下載與執行
 
-1. 到 [Releases](../../releases) 下載最新版的 `Limbus自動戰鬥.exe`（以及需要的話 `視窗自動按鍵器.exe`）。
+1. 到 [Releases](../../releases) 下載最新版的 `Limbus Company 自動戰鬥.exe`（以及需要的話 `視窗自動按鍵器.exe`）。
 2. 直接雙擊執行，**不需要安裝 Python**。第一次開啟需要幾秒鐘解壓縮。
 3. Windows 可能跳出「Windows 已保護您的電腦」：點「**其他資訊** → **仍要執行**」。這是因為執行檔沒有付費的數位簽章，不是病毒；不放心的話可以[從原始碼執行](#從原始碼執行--自行打包)。
 
 > 系統需求：Windows 10 / 11（64 位元）。
 
-## Limbus 自動戰鬥 使用說明
+## Limbus Company 自動戰鬥 使用說明
 
 ### 快速開始
 
-1. 開啟遊戲（建議**視窗模式或無邊框視窗**），開啟 `Limbus自動戰鬥.exe`。
+1. 開啟遊戲（建議**視窗模式或無邊框視窗**），開啟 `Limbus Company 自動戰鬥.exe`。
 2. 在遊戲裡進到**選技能的畫面**，按程式的「**測試辨識**」：紀錄應該顯示「選技能回合」，並完成自動校準。
 3. 按「**開始**」或 `F8`，接下來程式會自己打。
 
@@ -172,7 +172,7 @@ PyInstaller 打包、又會模擬按鍵的程式很常被誤判。原始碼完�
 
 ```bash
 pip install -r requirements.txt
-python limbus_battle.pyw      # Limbus 自動戰鬥
+python limbus_battle.pyw      # Limbus Company 自動戰鬥
 python auto_key.pyw           # 視窗自動按鍵器
 ```
 
@@ -185,12 +185,12 @@ python build.py
 ### 檔案結構
 
 ```
-├─ limbus_battle.pyw     Limbus 自動戰鬥（畫面辨識、狀態判斷、GUI）
+├─ limbus_battle.pyw     Limbus Company 自動戰鬥（畫面辨識、狀態判斷、GUI）
 ├─ auto_key.pyw          視窗自動按鍵器（GUI）
 ├─ keysender.py          共用：視窗列舉、按鍵語法、背景 / 前景送鍵
 ├─ limbus_templates/     辨識用的圖示樣本（*_mask.png 為遮罩，黑色部分不比對）
 ├─ sounds/               預設提示音
-├─ icon.ico / icon.png   程式圖示
+├─ icon.ico / icon.png   Limbus Company 自動戰鬥 的圖示
 ├─ build.py / build.bat  打包腳本
 └─ requirements.txt
 ```
@@ -207,7 +207,7 @@ python build.py
 ## 授權
 
 - 程式碼：[MIT License](LICENSE)
-- 程式圖示（`icon.png`、`icon.ico`）：原創作品，著作權屬於作者。
+- Limbus Company 自動戰鬥 的圖示（`icon.png`、`icon.ico`）：作者原創作品，著作權屬於作者。
 - `limbus_templates/` 內的圖片擷取自 Limbus Company 遊戲畫面，著作權屬於 Project Moon，僅作為畫面辨識用途，不在 MIT 授權範圍內。
 - 使用前請閱讀 [使用條款與免責聲明](DISCLAIMER.md)。
 
@@ -216,7 +216,7 @@ python build.py
 <details>
 <summary><b>English summary</b></summary>
 
-**Limbus Auto Battle** is a Windows tool that watches the Limbus Company window and automates combat: it presses `P` + `Enter` whenever the skill-selection turn appears, can press Enter on the team-formation screen to start the battle, pauses with a sound alert when a mid-battle choice/event appears or the battle UI disappears (e.g. defeat), and plays a sound on VICTORY. Detection uses image template matching on icons only (no text), so it works with any language or fan translation, auto-calibrates to different resolutions, and lets you re-sample icons from your own screen. Hotkeys: `F8` start/stop, `Ctrl+Y` pause/resume.
+**Limbus Company 自動戰鬥** (Limbus Company Auto Battle) is a Windows tool that watches the Limbus Company window and automates combat: it presses `P` + `Enter` whenever the skill-selection turn appears, can press Enter on the team-formation screen to start the battle, pauses with a sound alert when a mid-battle choice/event appears or the battle UI disappears (e.g. defeat), and plays a sound on VICTORY. Detection uses image template matching on icons only (no text), so it works with any language or fan translation, auto-calibrates to different resolutions, and lets you re-sample icons from your own screen. Hotkeys: `F8` start/stop, `Ctrl+Y` pause/resume.
 
 **Window Key Sender** sends a key sequence (e.g. `p{ENTER}`) to any chosen window at a fixed interval, in the background or foreground.
 
